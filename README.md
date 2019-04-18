@@ -16,3 +16,4 @@ Include the date you created this project and README file.
 ### Credits
 1. Udacity.com, Programing for Data Science
 2. Markdown Syntax provided by Mode Analytics
+3. Wordpress.com, Markdown Quick Reference Cheat Sheet
