@@ -14,4 +14,5 @@ Include the date you created this project and README file.
 4. washington.csv
 
 ### Credits
-*Udacity.com, Programing for Data Science*
+1. Udacity.com, Programing for Data Science
+2. Markdown Syntax provided by Mode Analytics
