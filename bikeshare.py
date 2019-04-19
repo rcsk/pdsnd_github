@@ -1,11 +1,9 @@
 import time
 import pandas as pd
 import numpy as np
-
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -17,7 +15,7 @@ def get_filters():
     """
     month_selector = ('all', 'january', 'february', 'march', 'april', 'may', 'june')
     weekday_selector = ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
-    error_catch_stmt = "Wrong input, please try again..."
+    error_catch_stmt = 'Wrong input, please try again...'
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
         city = input('Enter city name (chicago, new york city or washington): ').lower()
@@ -100,7 +98,7 @@ def time_stats(df):
     popular_hour = df['day'].mode()[0]
     print('Most Popular Hour:', popular_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 def station_stats(df):
@@ -120,7 +118,7 @@ def station_stats(df):
     # Display most frequent combination of start station and end station trip
     combo_start_stop = df[['Start Station', 'End Station']].mode().loc[0]
     print('The most commonly used combined start and end station: {} + {}'.format(combo_start_stop[0], combo_start_stop[1]))
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 def trip_duration_stats(df):
@@ -137,7 +135,7 @@ def trip_duration_stats(df):
     m_travel_time = df['Trip Duration'].mean()
     print('Mean Travel Time:', m_travel_time)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 def user_stats(df):
